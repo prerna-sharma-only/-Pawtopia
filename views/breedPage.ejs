@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Breed Atlas</title>
+</head>
+<body>
+    <h1>🐾 Breed Atlas</h1>
+    <hr>
+    <%const keys = Object.keys(breeds)%>
+    <%for (let key of keys) {%>
+        <a href="/explore/<%=key%>"><%=key%><a>
+        <br>
+    <%}%>
+    <br>
+    <hr>
+    <a href="/">🏠 Back to Home</a>
+</body>
+</html>
