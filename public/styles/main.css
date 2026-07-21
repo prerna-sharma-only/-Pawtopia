@@ -1785,6 +1785,11 @@ transform:scaleX(1);
     align-items:center;
 
     margin-bottom:28px;
+    transition:.35s;
+}
+
+.subbreed-card:hover .subbreed-icon{
+    transform:scale(1.08);
 }
 
 .subbreed-icon i{
@@ -1858,10 +1863,10 @@ transform:scaleX(1);
     transform:translateY(-2px);
 }
 
-.branch-breed-name{
+/* .branch-breed-name{
     text-align:center;
     margin:25px 0 45px;
-}
+} */
 
 .branches-section{
     max-width:1400px;
@@ -1941,6 +1946,7 @@ gap:18px;
 
     color:#c6894b;
     transition:.35s;
+    letter-spacing:.3px;
 }
 
 .explore-link i{
@@ -1953,5 +1959,23 @@ gap:18px;
 
 .subbreed-card:hover .explore-link i{
     transform:translateX(6px);
+}
+
+.branch-current{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 28px;
+
+    background:#f7ede3;
+
+    color:#4d3529;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin:35px 0 20px;
 }
 
