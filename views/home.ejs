@@ -1,14 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawtopia</title>
-</head>
-<body>
-    <h1>Welcome to 🐶Pawtopia - <i>"The Dog Hub"</i></h1>
-    <p>Discover hundreds of dog breeds, explore random dog photos, and learn about your favorite furry friends.</p></p>
-    <a href="/breeds">🐾 Breed Atlas</a>
-    <a href="/random">🎲 Lucky Pup</a>
-</body>
-</html>
+<%- include("partials/header", { title: "Pawtopia" }) %>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            <i class="fa-solid fa-paw"></i>
+            Pawtopia
+        </h1>
+
+        <span class="hero-tagline">
+            THE DOG HUB
+        </span>
+
+        <p>
+            Discover hundreds of dog breeds, explore random dog photos,
+            and learn about your favorite furry friends.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="/images/dog-hero.png" alt="Dog Illustration">
+        
+
+    </div>
+
+</section>
+<section class="features">
+
+    <h2>Why You'll Love Pawtopia</h2>
+
+    <p class="feature-subtitle">
+        Browse breeds, discover random pups, and explore the canine world with ease.
+    </p>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+
+            <h3>Breed Atlas</h3>
+
+            <p>
+                Browse hundreds of dog breeds from around the world.
+            </p>
+
+            <a href="/breeds">
+                Learn More
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-dice"></i>
+            </div>
+
+            <h3>Lucky Pup</h3>
+
+            <p>
+                Meet a random adorable dog with every click.
+            </p>
+
+            <a href="/random">Try Now <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-images"></i>
+            </div>
+
+            <h3>Paw Explorer</h3>
+
+            <p>
+                Explore breeds, sub-breeds, and beautiful dog images.
+            </p>
+
+            <a href="/breeds">Discover <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>

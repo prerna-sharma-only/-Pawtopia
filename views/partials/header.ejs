@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Cormorant Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>
+                <i class="fa-solid fa-paw"></i>
+                Pawtopia
+            </h2>
+            <p>The Dog Hub</p>
+        </div>
+
+        <nav>
+
+            <a href="/">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="/breeds">
+                <i class="fa-solid fa-paw"></i>
+                Breed Atlas
+            </a>
+
+            <a href="/random">
+                <i class="fa-solid fa-dice"></i>
+                Lucky Pup
+            </a>
+
+        </nav>
+        <div class="sidebar-footer">
+
+            <p><i class="fa-solid fa-heart"></i> Made with love</p>
+
+            <small>© <%= new Date().getFullYear() %> Pawtopia</small>
+
+        </div>
+    </aside>
+    
+
+    <!-- Top Bar -->
+    <header class="topbar">
+
+        <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <h2>
+            <i class="fa-solid fa-paw"></i>
+            <%= title %>
+        </h2>
+
+    </header>
+
+    <main class="page-content">

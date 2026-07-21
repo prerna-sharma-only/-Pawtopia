@@ -1,19 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔍 Paw Explorer</title>
-</head>
-<body>
-    <h1>🔍 Paw Explorer</h1>
-    <hr>
-    <h2>Breed - <%=breed%></h2>
-    <img src="<%=imageLink%>" height="500" width="500" alt="breed">
-    <br>
-    <a href="/subbreeds/<%=breed%>">Click Here To Explore Paw Branches</a>
-    <br>
-    <hr>
-    <a href="/">🏠 Back to Home</a>
-</body>
-</html>
+<%- include("partials/header", { title: "Paw Explorer" }) %>
+
+<section class="explore-section">
+
+    <h1>
+        <i class="fa-solid fa-paw"></i>
+        Paw Explorer
+    </h1>
+
+    <p class="explore-subtitle">
+        Discover beautiful images and explore everything about this breed.
+    </p>
+
+    <div class="breed-profile">
+
+        <div class="breed-image">
+
+            <img src="<%= imageLink %>" alt="<%= breed %>">
+
+        </div>
+
+        <div class="breed-info">
+
+            <h2><%= breed %></h2>
+
+            <p class="breed-desc">
+
+                Browse beautiful photos and uncover every paw branch in the Pawtopia collection.
+            </p>
+
+            <div class="breed-highlights">
+
+                <div class="highlight-item">
+                    <i class="fa-solid fa-paw"></i>
+                    <span>Beautiful breed gallery</span>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="fa-solid fa-paw"></i>
+                    <span>Sub-breeds available to explore</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="explore-action">
+
+        <a href="/subbreeds/<%= breed %>" class="branch-btn">
+
+            <i class="fa-solid fa-code-branch"></i>
+
+            Explore Sub-Breeds
+
+        </a>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>

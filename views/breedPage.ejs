@@ -1,20 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐾 Breed Atlas</title>
-</head>
-<body>
-    <h1>🐾 Breed Atlas</h1>
-    <hr>
-    <%const keys = Object.keys(breeds)%>
-    <%for (let key of keys) {%>
-        <a href="/explore/<%=key%>"><%=key%><a>
-        <br>
-    <%}%>
-    <br>
-    <hr>
-    <a href="/">🏠 Back to Home</a>
-</body>
-</html>
+<%- include("partials/header", { title: "Breed Atlas" }) %>
+
+<section class="breed-section">
+
+    <h1>
+        <i class="fa-solid fa-paw"></i>
+        Breed Atlas
+    </h1>
+
+    <p class="breed-subtitle">
+        Discover every dog breed in one place.
+    </p>
+
+    <!-- search bar -->
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="breedSearch"
+            placeholder="Search your favourite breed..."
+        >
+        <span class="search-paw">
+            <i class="fa-solid fa-paw"></i>
+        </span>
+
+    </div>
+
+    <!-- Alphabet Filter -->
+
+    <div class="alphabet-filter">
+
+        <button class="letter-btn active" data-letter="ALL">
+            All
+        </button>
+
+        <% "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(letter => { %>
+
+            <button class="letter-btn" data-letter="<%= letter %>">
+                <%= letter %>
+            </button>
+
+        <% }) %>
+
+    </div>
+
+    <% const keys = Object.keys(breeds); %>
+
+    <div class="breed-grid">
+
+
+        <% for(let key of keys){ %>
+
+            <a href="/explore/<%= key %>" class="breed-card" data-name="<%= key.toUpperCase() %>">
+
+                <!-- to do filter thats why we are doing this -->
+
+                <div class="breed-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <h3><%= key %></h3>
+
+            </a>
+
+        <% } %>
+
+    </div>
+
+</section>
+
+<script>
+
+const buttons = document.querySelectorAll(".letter-btn");
+const cards = document.querySelectorAll(".breed-card");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const selected = button.dataset.letter;
+
+        cards.forEach(card => {
+
+            const breed = card.dataset.name;
+
+            if(selected === "ALL"){
+                card.style.display = "block";
+            }
+            else if(breed.startsWith(selected)){
+                card.style.display = "block";
+            }
+            else{
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+
+const searchInput = document.querySelector("#breedSearch");
+
+searchInput.addEventListener("input", () => {
+
+    const searchValue = searchInput.value.toUpperCase();
+
+    cards.forEach(card => {
+
+        const breed = card.dataset.name;
+
+        if(breed.includes(searchValue)){
+            card.style.display = "block";
+        }
+        else{
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+</script>
+
+<%- include("partials/footer") %>

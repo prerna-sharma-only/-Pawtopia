@@ -1,18 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Pup</title>
-</head>
-<body>
-    <h1>🎲 Lucky Pup</h1>
-    <p><%=dogThought%></p>
-    <img src="<%=imageLink%>" width="600" height="450" alt ="Dog">
-    <br>
-    <a href="/random">🔄 Another Lucky Pup</a>
-    <br>
-    <hr>
-    <a href="/">🏠 Back to Home</a>
-</body>
-</html>
+<%- include("partials/header", { title: "Lucky Pup" }) %>
+
+<section class="lucky-section">
+
+    <h1>
+        <i class="fa-solid fa-paw"></i>
+        Lucky Pup
+    </h1>
+
+    <div class="thought-card">
+
+        <div class="thought-title">
+
+            <i class="fa-solid fa-paw"></i>
+
+            Today's Paw Thought
+
+        </div>
+
+        <p id="typingThought" data-text="<%= dogThought %>"></p>
+
+    </div>
+
+    <div class="lucky-card">
+
+        <div class="random-badge">
+
+            <i class="fa-solid fa-paw"></i>
+            Pawtopia Pick
+
+        </div>
+
+        <div class="dog-image">
+
+            <img src="<%= imageLink %>" alt="Lucky Pup">
+
+        </div>
+
+        <p class="dog-caption">
+
+            Every click introduces you to a new furry companion.
+
+        </p>
+
+        <div class="lucky-actions">
+
+            <a href="/random" class="generate-btn">
+
+                <i class="fa-solid fa-paw"></i>
+
+                Meet Another Pup
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+const thought = document.getElementById("typingThought");
+
+const text = thought.dataset.text;
+
+thought.textContent = "";
+
+let index = 0;
+
+function typeWriter(){
+
+    if(index < text.length){
+
+        thought.textContent += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeWriter, 25);
+
+    }
+    else{
+
+        thought.classList.add("done");
+
+    }
+
+}
+
+window.addEventListener("load", typeWriter);
+
+</script>
+
+<%- include("partials/footer") %>

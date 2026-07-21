@@ -1,29 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐶🌿 Paw Branches</title>
-</head>
-<body>
-    <h1>🐶🌿 Paw Branches</h1>
-    <h2>Breed - <%=breed%></h2>
-    <hr>
-    <%if (sub.length === 0){%>
-        <p>🐾 No Paw Branches found for this breed.</p>
-        <br>
-        <hr>
-        <a href="/breeds">Back to Breed Atlas</a>
-    <%}else{%>
-        <%for (let key of sub) {%>
-            <a href="/subbreeds?name=<%=breed%>&sub=<%=key%>"><%=key%></a>
-            <br>
-        <%}%>
-        <br>
-        <hr>
-        <a href="/breeds">🐾Back to Breed Atlas</a>
-    <%}%>
-    <br>
-    <a href="/">🏠 Back to Home</a>
-</body>
-</html>
+<%- include("partials/header", { title: "Paw Branches" }) %>
+
+<section class="branches-section">
+
+    <h1>
+        <i class="fa-solid fa-paw"></i>
+        Paw Branches
+    </h1>
+
+    <p class="branches-subtitle">
+        Explore every available branch of this breed.
+    </p>
+
+    <h2 class="branch-breed-name">
+        <%= breed %>
+    </h2>
+
+    <% if(sub.length === 0){ %>
+
+        <div class="no-branches">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <h3>No Paw Branches Found</h3>
+
+            <p>
+                This breed doesn't have any sub-breeds to explore.
+            </p>
+
+        </div>
+
+    <% } else { %>
+
+        <div class="subbreed-grid">
+
+            <% for(let key of sub){ %>
+
+                <a href="/subbreeds?name=<%= breed %>&sub=<%= key %>" class="subbreed-card">
+
+                    <div class="subbreed-badge">
+
+                        <i class="fa-solid fa-leaf"></i>
+                        Paw Branch
+
+                    </div>
+
+                    <div class="subbreed-icon">
+
+                        <i class="fa-solid fa-paw"></i>
+
+                    </div>
+
+                    <h3><%= key %></h3>
+
+                    <p>
+
+                        Discover beautiful images and explore this unique branch.
+
+                    </p>
+
+                    <div class="explore-link">
+
+                        <span>Explore</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+
+                </a>
+
+            <% } %>
+
+        </div>
+
+    <% } %>
+
+    <div class="branch-actions">
+
+        <a href="/breeds" class="back-btn secondary">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Breed Atlas
+
+        </a>
+
+        <a href="/" class="back-btn">
+
+            <i class="fa-solid fa-house"></i>
+
+            Home
+
+        </a>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>
