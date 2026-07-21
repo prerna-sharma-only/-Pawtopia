@@ -1,12 +1,106 @@
-<%- include("partials/header", { title: "🐶 Paw Showcase" }) %>
-    <h1>🐶 Paw Showcase</h1>
-    <hr>
-    <h2>Breed - <%=breed%></h2>
-    <h2>SubBreed - <%=subBreed%></h2>
-    <img src="<%=imageLink%>" height="500" width="500" alt="subbreed">
-    <br>
-    <a href="/subbreeds/<%=breed%>">🐶🌿 Back to Paw Branches </a>
-    <br>
-    <hr>
-    <a href="/">🏠 Back to Home</a>
+<%- include("partials/header", { title: "Paw Showcase" }) %>
+
+<section class="showcase-section">
+
+    <div class="showcase-heading">
+
+        <h1>
+            <i class="fa-solid fa-paw"></i>
+            Paw Showcase
+        </h1>
+
+        <p>
+            Discover beautiful images from the Pawtopia collection.
+        </p>
+
+    </div>
+
+    <div class="showcase-container">
+
+        <div class="showcase-image">
+
+            <img src="<%= imageLink %>" alt="<%= subBreed %>">
+
+        </div>
+
+        <div class="showcase-info">
+
+    <div class="breed-pill">
+
+        <i class="fa-solid fa-dog"></i>
+
+        <%= breed %>
+
+    </div>
+
+    <h2 class="showcase-title">
+
+        <%= subBreed %>
+
+    </h2>
+
+    <div class="showcase-line"></div>
+
+    <p class="showcase-description">
+
+        A graceful member of the
+        <strong><%= breed %></strong>
+        family, waiting to be discovered in Pawtopia.
+
+    </p>
+
+    <div class="showcase-details">
+
+        <div class="detail-row">
+
+            <span>Breed</span>
+
+            <strong><%= breed %></strong>
+
+        </div>
+
+        <div class="detail-row">
+
+            <span>Branch</span>
+
+            <strong><%= subBreed %></strong>
+
+        </div>
+
+        <div class="detail-row">
+
+            <span>Source</span>
+
+            <strong>Dog CEO API</strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <div class="branch-actions">
+
+        <a href="/subbreeds/<%= breed %>" class="back-btn secondary">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Paw Branches
+
+        </a>
+
+        <a href="/" class="back-btn">
+
+            <i class="fa-solid fa-house"></i>
+
+            Home
+
+        </a>
+
+    </div>
+
+</section>
+
 <%- include("partials/footer") %>

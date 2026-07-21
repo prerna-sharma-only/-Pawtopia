@@ -1979,3 +1979,1345 @@ gap:18px;
     margin:35px 0 20px;
 }
 
+
+.no-branches{
+
+    max-width:520px;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    text-align:center;
+
+}
+
+.no-branches i{
+
+    font-size:2rem;
+
+    color:#d4a373;
+
+    margin-bottom:18px;
+
+}
+
+.no-branches h2{
+
+    margin:15px 0;
+
+}
+
+.no-branches p{
+
+    color:#666;
+
+}
+
+
+/* __________________ Paw Showcase styling__________________ */
+
+.showcase-section{
+
+    max-width:1400px;
+    margin:auto;
+    padding:70px 35px;
+
+}
+
+.showcase-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.showcase-heading h1{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:4rem;
+    color:#4d3529;
+
+}
+
+.showcase-heading p{
+
+    font-size:1.15rem;
+    color:#6f6f6f;
+    margin-top:12px;
+
+}
+
+.showcase-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+.showcase-image{
+
+    flex:1;
+    min-width:420px;
+    border-radius:35px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    transition:all .35s ease;
+    overflow:hidden;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.showcase-image:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+
+
+}
+
+.showcase-image img{
+
+    width:100%;
+    height:100%;
+    max-width:600px;
+    height:100%;
+    object-fit:contain;
+    border-radius:28px;
+    transition:.45s;
+
+
+}
+
+.showcase-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.showcase-info{
+
+    flex:1;
+    min-width:380px;
+    background:#fff;
+    border-radius:35px;
+    padding:60px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    transition:all .35s ease;
+
+}
+
+.showcase-info:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.showcase-line{
+
+    transition:.35s;
+
+}
+
+.showcase-info:hover .showcase-line{
+
+    width:280px;
+
+}
+
+.breed-pill{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    background:#f7ede3;
+
+    color:#d4a373;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+    transition:.35s;
+
+}
+
+.showcase-info:hover .breed-pill{
+
+    background:#d4a373;
+
+    color:#fff;
+
+}
+
+.showcase-info h2{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:3.5rem;
+    color:#4d3529;
+    margin-bottom:18px;
+
+}
+
+.title-line{
+
+    width:180px;
+    height:5px;
+    background:#d4a373;
+    border-radius:10px;
+    margin-bottom:35px;
+
+}
+
+.showcase-info p{
+
+    font-size:1.1rem;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:45px;
+
+}
+
+.showcase-points{
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+
+}
+
+.showcase-points div{
+
+    font-size:1.05rem;
+    color:#555;
+
+}
+
+.showcase-points i{
+
+    color:#d4a373;
+    margin-right:14px;
+
+}
+
+.showcase-title{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:4rem;
+    color:#4d3529;
+    margin:25px 0 18px;
+
+}
+
+.showcase-line{
+
+    width:220px;
+    height:5px;
+    background:#d4a373;
+    border-radius:50px;
+    margin-bottom:35px;
+
+}
+
+.showcase-description{
+
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#666;
+    max-width:560px;
+    margin-bottom:45px;
+
+}
+
+.showcase-description strong{
+
+    color:#4d3529;
+
+}
+
+.showcase-details{
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    max-width:520px;
+
+}
+
+.detail-row{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:16px 0;
+
+    border-bottom:1px solid #efe5d8;
+
+}
+
+.detail-row span{
+
+    color:#888;
+    font-size:1rem;
+
+}
+
+.detail-row strong{
+
+    color:#4d3529;
+    font-size:1.05rem;
+    font-weight:600;
+
+}
+
+
+/* ======================================================
+        RESPONSIVE DESIGN - PART 1
+        Large Laptop & Tablet
+====================================================== */
+
+
+/* ===========================
+   LARGE LAPTOP (≤1400px)
+=========================== */
+
+@media (max-width:1400px){
+
+    .page-content{
+        padding:30px;
+    }
+
+    .hero{
+        padding:50px;
+        gap:45px;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .hero-image img{
+        width:430px;
+    }
+
+    .hero-image::before{
+        width:380px;
+        height:380px;
+    }
+
+    .showcase-image{
+        min-width:350px;
+    }
+
+    .showcase-info{
+        min-width:350px;
+        padding:45px;
+    }
+
+    .breed-image{
+        height:450px;
+    }
+
+}
+
+
+
+/* ===========================
+   TABLET / SMALL LAPTOP (≤1100px)
+=========================== */
+
+@media (max-width:1100px){
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+
+        min-height:auto;
+
+        padding:50px 30px;
+
+        gap:50px;
+
+    }
+
+    .hero-content{
+
+        max-width:700px;
+        margin:auto;
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        justify-content:center;
+        align-items:center;
+
+        font-size:3rem;
+
+        gap:15px;
+
+    }
+
+    .hero p{
+
+        margin:0 auto 35px;
+        max-width:650px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        margin-top:10px;
+
+    }
+
+    .hero-image img{
+
+        width:360px;
+
+    }
+
+    .hero-image::before{
+
+        width:320px;
+        height:320px;
+
+    }
+
+
+
+    /* ---------- Explore ---------- */
+
+    .breed-profile{
+
+        grid-template-columns:1fr;
+        gap:35px;
+
+    }
+
+    .breed-image{
+
+        height:420px;
+
+    }
+
+    .breed-info{
+
+        min-height:auto;
+        padding:40px;
+
+    }
+
+
+
+    /* ---------- Showcase ---------- */
+
+    .showcase-container{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+    .showcase-image,
+    .showcase-info{
+
+        width:100%;
+        min-width:100%;
+
+    }
+
+    .showcase-info{
+
+        padding:45px;
+
+    }
+
+}
+/* ======================================================
+        RESPONSIVE DESIGN - PART 1
+        Large Laptop & Tablet
+====================================================== */
+
+
+/* ===========================
+   LARGE LAPTOP (≤1400px)
+=========================== */
+
+@media (max-width:1400px){
+
+    .page-content{
+        padding:30px;
+    }
+
+    .hero{
+        padding:50px;
+        gap:45px;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .hero-image img{
+        width:430px;
+    }
+
+    .hero-image::before{
+        width:380px;
+        height:380px;
+    }
+
+    .showcase-image{
+        min-width:350px;
+    }
+
+    .showcase-info{
+        min-width:350px;
+        padding:45px;
+    }
+
+    .breed-image{
+        height:450px;
+    }
+
+}
+
+
+
+/* ===========================
+   TABLET / SMALL LAPTOP (≤1100px)
+=========================== */
+
+@media (max-width:1100px){
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+
+        min-height:auto;
+
+        padding:50px 30px;
+
+        gap:50px;
+
+    }
+
+    .hero-content{
+
+        max-width:700px;
+        margin:auto;
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        justify-content:center;
+        align-items:center;
+
+        font-size:3rem;
+
+        gap:15px;
+
+    }
+
+    .hero p{
+
+        margin:0 auto 35px;
+        max-width:650px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        margin-top:10px;
+
+    }
+
+    .hero-image img{
+
+        width:360px;
+
+    }
+
+    .hero-image::before{
+
+        width:320px;
+        height:320px;
+
+    }
+
+
+
+    /* ---------- Explore ---------- */
+
+    .breed-profile{
+
+        grid-template-columns:1fr;
+        gap:35px;
+
+    }
+
+    .breed-image{
+
+        height:420px;
+
+    }
+
+    .breed-info{
+
+        min-height:auto;
+        padding:40px;
+
+    }
+
+
+
+    /* ---------- Showcase ---------- */
+
+    .showcase-container{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+    .showcase-image,
+    .showcase-info{
+
+        width:100%;
+        min-width:100%;
+
+    }
+
+    .showcase-info{
+
+        padding:45px;
+
+    }
+
+}
+
+/* ======================================================
+        RESPONSIVE DESIGN - PART 1
+        Large Laptop & Tablet
+====================================================== */
+
+
+/* ===========================
+   LARGE LAPTOP (≤1400px)
+=========================== */
+
+@media (max-width:1400px){
+
+    .page-content{
+        padding:30px;
+    }
+
+    .hero{
+        padding:50px;
+        gap:45px;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .hero-image img{
+        width:430px;
+    }
+
+    .hero-image::before{
+        width:380px;
+        height:380px;
+    }
+
+    .showcase-image{
+        min-width:350px;
+    }
+
+    .showcase-info{
+        min-width:350px;
+        padding:45px;
+    }
+
+    .breed-image{
+        height:450px;
+    }
+
+}
+
+
+
+/* ===========================
+   TABLET / SMALL LAPTOP (≤1100px)
+=========================== */
+
+@media (max-width:1100px){
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+
+        min-height:auto;
+
+        padding:50px 30px;
+
+        gap:50px;
+
+    }
+
+    .hero-content{
+
+        max-width:700px;
+        margin:auto;
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        justify-content:center;
+        align-items:center;
+
+        font-size:3rem;
+
+        gap:15px;
+
+    }
+
+    .hero p{
+
+        margin:0 auto 35px;
+        max-width:650px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        margin-top:10px;
+
+    }
+
+    .hero-image img{
+
+        width:360px;
+
+    }
+
+    .hero-image::before{
+
+        width:320px;
+        height:320px;
+
+    }
+
+
+
+    /* ---------- Explore ---------- */
+
+    .breed-profile{
+
+        grid-template-columns:1fr;
+        gap:35px;
+
+    }
+
+    .breed-image{
+
+        height:420px;
+
+    }
+
+    .breed-info{
+
+        min-height:auto;
+        padding:40px;
+
+    }
+
+
+
+    /* ---------- Showcase ---------- */
+
+    .showcase-container{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+    .showcase-image,
+    .showcase-info{
+
+        width:100%;
+        min-width:100%;
+
+    }
+
+    .showcase-info{
+
+        padding:45px;
+
+    }
+
+}
+
+
+/* ======================================================
+        RESPONSIVE DESIGN - PART 2
+        Tablets, Mobiles & Small Devices
+======================================================*/
+
+
+/* ===========================
+   TABLETS (≤900px)
+=========================== */
+
+@media (max-width:900px){
+
+    .page-content{
+        padding:20px;
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .breed-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .subbreed-grid{
+        grid-template-columns:repeat(2,minmax(260px,1fr));
+        gap:25px;
+    }
+
+    .subbreed-card{
+        width:100%;
+    }
+
+    .search-box{
+        max-width:95%;
+    }
+
+}
+
+
+
+/* ===========================
+   LARGE MOBILES (≤768px)
+=========================== */
+
+@media (max-width:768px){
+
+    .page-content{
+        padding:18px;
+    }
+
+    .topbar{
+        padding:0 18px;
+    }
+
+    .topbar h2{
+        font-size:1.5rem;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding:40px 20px;
+        gap:35px;
+
+    }
+
+    .hero h1{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        justify-content:center;
+
+        text-align:center;
+
+        font-size:2.6rem;
+
+        gap:12px;
+
+    }
+
+    .hero h1 span{
+
+        font-size:1rem;
+
+        letter-spacing:4px;
+
+        margin-top:0;
+
+    }
+
+    .hero p{
+
+        text-align:center;
+
+        max-width:100%;
+
+        font-size:1rem;
+
+    }
+
+    .hero-image img{
+
+        width:280px;
+
+    }
+
+    .hero-image::before{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+    /* ---------- Grids ---------- */
+
+    .feature-grid,
+    .breed-grid,
+    .subbreed-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* ---------- Lucky Pup ---------- */
+
+    .lucky-card{
+
+        padding:25px;
+
+    }
+
+    .lucky-actions{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    /* ---------- Explorer ---------- */
+
+    .breed-image{
+
+        height:320px;
+
+    }
+
+    .breed-info{
+
+        padding:30px;
+
+    }
+
+    .breed-info h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .branch-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+        min-width:unset;
+
+    }
+
+    /* ---------- Paw Branches ---------- */
+
+    .branch-actions{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .back-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    /* ---------- Showcase ---------- */
+
+    .showcase-heading{
+
+        margin-bottom:35px;
+
+    }
+
+    .showcase-heading h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .showcase-image{
+
+        min-width:100%;
+
+        padding:22px;
+
+    }
+
+    .showcase-info{
+
+        min-width:100%;
+
+        padding:30px 24px;
+
+        text-align:center;
+
+    }
+
+    .breed-pill{
+
+        margin:0 auto 20px;
+
+    }
+
+    .showcase-title{
+
+        font-size:2.6rem;
+
+        margin:15px 0;
+
+    }
+
+    .showcase-line{
+
+        width:140px;
+
+        margin:15px auto 28px;
+
+    }
+
+    .showcase-description{
+
+        max-width:100%;
+
+        margin-bottom:30px;
+
+        font-size:1rem;
+
+    }
+
+    .showcase-details{
+
+        max-width:100%;
+
+    }
+
+}
+
+
+
+/* ===========================
+   SMALL MOBILES (≤480px)
+=========================== */
+
+@media (max-width:480px){
+
+    .page-content{
+
+        padding:15px;
+
+    }
+
+    .sidebar{
+
+        width:240px;
+
+    }
+
+    .topbar{
+
+        height:70px;
+
+    }
+
+    .topbar h2{
+
+        font-size:1.25rem;
+
+    }
+
+    #menu-btn{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding:30px 15px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero h1 span{
+
+        font-size:.9rem;
+
+        letter-spacing:3px;
+
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+
+    }
+
+    .hero-image img{
+
+        width:220px;
+
+    }
+
+    .hero-image::before{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+    /* ---------- Search ---------- */
+
+    .search-box{
+
+        padding:8px 12px;
+
+    }
+
+    .search-paw{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+    /* ---------- Cards ---------- */
+
+    .feature-card,
+    .breed-card,
+    .subbreed-card{
+
+        padding:25px 20px;
+
+    }
+
+    /* ---------- Lucky ---------- */
+
+    .lucky-card{
+
+        padding:18px;
+
+    }
+
+    /* ---------- Explorer ---------- */
+
+    .breed-image{
+
+        height:260px;
+
+    }
+
+    .breed-info{
+
+        padding:22px 18px;
+
+    }
+
+    .breed-info h2{
+
+        font-size:2rem;
+
+    }
+
+    /* ---------- Showcase ---------- */
+
+    .showcase-heading h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .showcase-title{
+
+        font-size:2.2rem;
+
+    }
+
+    .showcase-info{
+
+        padding:22px 18px;
+
+    }
+
+    .showcase-line{
+
+        width:110px;
+
+    }
+
+    .showcase-description{
+
+        font-size:.95rem;
+
+    }
+
+    .detail-row{
+
+        font-size:.9rem;
+
+        gap:8px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   EXTRA SMALL DEVICES (≤360px)
+=========================== */
+
+@media (max-width:360px){
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .showcase-title{
+
+        font-size:2rem;
+
+    }
+
+    .breed-info h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .feature-card,
+    .breed-card,
+    .subbreed-card{
+
+        padding:20px 15px;
+
+    }
+
+}
