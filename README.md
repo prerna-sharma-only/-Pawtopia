@@ -86,33 +86,49 @@ Pawtopia transforms live data from the **Dog CEO API** into an engaging dog disc
 
 <p align="center">
 
-<img src="" width="100%"/>
+<img src="/public/images/home1.png" width="100%"/>
 
 </p>
 
 <table>
+ 
 <tr>
-
 <td width="50%">
-<img src="assets/breeds.png"/>
+<img src="/public/images/home1.png"/>
 </td>
-
 <td width="50%">
-<img src="assets/explore.png"/>
+<img src="/public/images/home2.png"/>
 </td>
-
 </tr>
 
 <tr>
-
 <td width="50%">
-<img src="assets/random.png"/>
+<img src="/public/images/nav.png"/>
 </td>
-
 <td width="50%">
-<img src="assets/subbreeds.png"/>
+<img src="/public/images/breedatlas.png" />
 </td>
+</tr>
 
+<tr>
+<td width="50%">
+<img src="/public/images/luckypupfirst.png"/>
+</td>
+<td width="50%">
+<img src="/public/images/luckypupsecond.png"/>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<img src="/public/images/pawbranches.png"/>
+</td>
+<td width="50%">
+<img src="/public/images/pawexplorer.png"/>
+</td>
+<td width="50%">
+<img src="/public/images/pawshowcase.png"/>
+</td>
 </tr>
 
 </table>
