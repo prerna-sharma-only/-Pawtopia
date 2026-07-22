@@ -4,6 +4,7 @@
   "description": "A project built using the Express/Node.js platform, with the Axios HTTP client, that integrates a chosen public API.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

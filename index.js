@@ -3,7 +3,7 @@ import axios from "axios";
 import cors from "cors";
 import bodyParser from "body-parser";
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const baseURL = "https://dog.ceo/api/";
 
 app.use(cors());
@@ -22,7 +22,7 @@ app.get("/breeds", async (req, res) => {
         const response = await axios.get(`${baseURL}breeds/list/all`);
         res.render("breedPage.ejs",{breeds : response.data.message});
     }catch(error){
-        res.send(error.message);
+        res.status(500).send(error.message);
     }
 });
 
@@ -33,7 +33,7 @@ app.get("/random", async (req, res) => {
         const response = await axios.get(`${baseURL}breeds/image/random`);
         res.render("random.ejs",{imageLink : response.data.message,dogThought :luckyThought});
     }catch(error){
-        res.send(error.message);
+        res.status(500).send(error.message);
     }
 });
 
@@ -45,7 +45,7 @@ app.get("/explore/:name", async (req, res) => {
         const pick = Math.floor(Math.random()*response.data.message.length)
         res.render("explore.ejs",{imageLink : response.data.message[pick],breed:breed});
     }catch(error){
-        console.log(error.message);
+        res.status(500).send(error.message);
     }
 });
 
@@ -57,7 +57,7 @@ app.get("/subbreeds/:name",async(req,res)=>{
         res.render("subBreeds.ejs",{sub: response.data.message,breed:breed});
         console.log(response.data.status);
     }catch(error){
-        console.log(error.message);
+        res.status(500).send(error.message);
     }
 })
 
@@ -71,7 +71,7 @@ app.get("/subbreeds",async(req,res)=>{
         res.render("breedExplore.ejs",{imageLink : response.data.message[pick],breed:breed,subBreed:subBreed});
         console.log(response.data.status);
     }catch(error){
-        console.log(error.message);
+        res.status(500).send(error.message);
     }
 })
 
