@@ -6,6 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const baseURL = "https://dog.ceo/api/";
 
+app.set("view engine", "ejs");
+
 app.use(cors());
 
 app.use(bodyParser.urlencoded({extended:true})); //for body data
