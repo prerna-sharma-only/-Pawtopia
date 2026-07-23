@@ -24,7 +24,7 @@ A modern dog exploration platform built with **Node.js**, **Express.js**, **EJS*
 
 
 
-<a href="https://github.com/YOUR_USERNAME/pawtopia-dog-hub">
+<a href="https://github.com/prerna-sharma-only/-Pawtopia">
 <img src="https://img.shields.io/badge/GitHub_Repository-3F2C25?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -84,11 +84,11 @@ Pawtopia transforms live data from the **Dog CEO API** into an engaging dog disc
 <h2><img src="https://img.icons8.com/ios-filled/20/8B5E3C/dog-paw-print.png" alt="paw" /> Paw Showcase</h2>
 <p><sub>A glimpse into the experience.</sub></p>
 
-<p align="center">
+<!-- <p align="center">
 
 <img src="/public/images/home1.png" width="100%"/>
 
-</p>
+</p> -->
 
 <table>
  
